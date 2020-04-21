@@ -28,6 +28,10 @@ h3 {
   float: right;
 }
 
+.cropImage {
+  float: right;
+}
+
 .row {
   background-color: green;
   padding: 1%;

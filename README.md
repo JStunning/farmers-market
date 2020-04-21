@@ -1,12 +1,12 @@
-# Pierre's Treats
+# Farmer's Market
 
-#### _Inventory many to many C# app, 3/27/2020_
+#### _React App, 4/21/2020_
 
 #### By _**Jack Dunning**_
 
 ## Description
 
-_App to track inventory of treats and the treats respective flavors for a shop owner._
+_React app that has info about a local farmer and what farmer's markets they will be at as well as a section for what crops will be there depensing on the season._
 
 ## Setup/Installation Requirements
 
@@ -82,9 +82,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Specs
 
-  * _Spec:_ When user opens localhost:5000.
+  * _Spec:_ When user opens http://localhost:3000/.
       * _Input:_ user opens web app
-      * _Output:_ homepage should open "Welcome to Pierre's!" and also gives you links "See Peirre's Treats", "See Peirre's Flavors"
+      * _Output:_ homepage should open "Avery's Organics" header, buttons with days and crops tabs, a list of all days with address they will be at as well as the team running the market that day.
 
 
 ## Known Bugs
@@ -97,7 +97,7 @@ _Email: JackStunning9001@gmail.com_
 
 ## Technologies Used
 
-_C#, .NET, MSTest, MySQL, Html, Bootstrap, Entity Framework_
+_Javascript, React, Html, Css, Bootstrap, Webpack, Babel, esLint_
 
 ### License
 
