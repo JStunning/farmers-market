@@ -3,20 +3,30 @@ import Location from './Location';
 
 const masterLocationList = [
   {
-    date: '4/21/2020',
+    day: 'Monday',
     names: 'Thato and Haley',
     address: '1234 Down Town Ave'
   },
   {
-    date: '4/22/2020',
+    day: 'Tuesday',
     names: 'Sleater and Kinney',
     address: '0987 1st St'
   },
   {
-    date: '4/23/2020',
+    day: 'Wednesday',
     names: 'Imani & Jacob',
     address: '1029 Main St'
-  }
+  },
+  {
+    day: 'Thursday',
+    names: 'Thato and Haley',
+    address: '1234 Down Town Ave'
+  },
+  {
+    day: 'Friday',
+    names: 'Imani & Jacob',
+    address: '1029 Main St'
+  },
 ];
 
 function LocationList(){
@@ -25,7 +35,7 @@ function LocationList(){
       <hr/>
       {masterLocationList.map((location, index) =>
         <Location 
-          date={location.date}
+          day={location.day}
           names={location.names}
           address={location.address}
           key={index}/>
