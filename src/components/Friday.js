@@ -4,9 +4,9 @@ function Friday(){
   return (
     <React.Fragment>
       <hr/>
-      <h3>Day: Friday</h3>
-      <h3>Address: 1029 Main St</h3>
-      <h3>Team: Imani & Jacob</h3>
+      <h3>Day: </h3><p>Friday</p>
+      <h3>Address: </h3><p>1029 Main St</p>
+      <h3>Team: </h3><p>Imani & Jacob</p>
       <hr/>
     </React.Fragment>
   );

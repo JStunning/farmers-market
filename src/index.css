@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  margin: 0 10%;
+}
+
+h1, h2, h3, p {
+  padding: 0 5%;
+}
+
+h3 {
+  color: green;
+}
+
+.cropButton {
+  float: right;
+}
+
+.row {
+  background-color: green;
+  padding: 1%;
+}
+
+button {
+  color: green;
+  background-color: white;
+  border: rgb(0, 90, 0) solid 2px;
+}

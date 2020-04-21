@@ -1,5 +1,6 @@
 import React from 'react';
 import LocationList from './LocationList';
+import CropList from './CropList';
 //import Test from './Test';
 import Monday from './Monday';
 import Tuesday from './Tuesday';
@@ -21,6 +22,13 @@ class LocationControl extends React.Component {
       return {day: 0};
     });
     console.log("All");
+    console.log(this.state.day);
+  };
+  handleClickCrop = () => {
+    this.setState(() => {
+      return {day: 6};
+    });
+    console.log("Crops");
     console.log(this.state.day);
   };
   handleClickMonday = () => {
@@ -71,17 +79,26 @@ class LocationControl extends React.Component {
       currentlyVisibleState = <Thursday />
     } else if (this.state.day === 5) {
       currentlyVisibleState = <Friday />
+    } else if (this.state.day === 6) {
+      currentlyVisibleState = <CropList />
     } else {
       currentlyVisibleState = <LocationList />
     }
     return (
       <React.Fragment>
-        <button onClick={this.handleClick}>All</button>
-        <button onClick={this.handleClickMonday}>Monday</button>
-        <button onClick={this.handleClickTuesday}>Tuesday</button>
-        <button onClick={this.handleClickWednesday}>Wednesday</button>
-        <button onClick={this.handleClickThursday}>Thursday</button>
-        <button onClick={this.handleClickFriday}>Friday</button>
+        <div class="row">
+          <div class="col-md-6">
+            <button onClick={this.handleClickCrop} class="cropButton">Seasonal Crops</button>
+          </div>
+          <div class="col-md-6">
+            <button onClick={this.handleClick}>All</button>
+            <button onClick={this.handleClickMonday}>Monday</button>
+            <button onClick={this.handleClickTuesday}>Tuesday</button>
+            <button onClick={this.handleClickWednesday}>Wednesday</button>
+            <button onClick={this.handleClickThursday}>Thursday</button>
+            <button onClick={this.handleClickFriday}>Friday</button>
+          </div>
+        </div>
         {currentlyVisibleState}
       </React.Fragment>
     );

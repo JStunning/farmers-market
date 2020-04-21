@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 function Location(props){
   return (
     <React.Fragment>
-      <h3>Day: {props.day}</h3>
-      <h3>Address: {props.address}</h3>
-      <h3>Team: {props.names}</h3>
+      <h3>Day: </h3><p>{props.day}</p>
+      <h3>Address: </h3><p>{props.address}</p>
+      <h3>Team: </h3><p>{props.names}</p>
       <hr/>
     </React.Fragment>
   );

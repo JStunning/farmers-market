@@ -5,8 +5,10 @@ import LocationControl from "./LocationControl";
 function App(){
   return ( 
     <React.Fragment>
-      <Header />
-      <LocationControl />
+      <div class="container">
+        <Header />
+        <LocationControl />
+      </div>
     </React.Fragment>
   );
 }
